@@ -75,7 +75,7 @@ export const chatScripts: ChatScript[] = [
   {
     matchAny: ["r01", "grant", "aims", "nih"],
     response:
-      "Your current R01 draft in the Writing Studio has three Aims: (1) re-examine the rigidification hypothesis with OPC and TIP4P-Ew water, (2) anchor with smFRET at 85 °C, (3) scale to continuous-flow biocatalysis. 47 papers from the team library are cited across the blocks. The brain flags one open contradiction: Aim 3 (flexible dynamics matter for biocatalysis) conflicts with the Aim 1 framing — Marcus raised this in a comment yesterday. Worth resolving before submission.",
+      "Your current R01 draft in the Notebook has three Aims: (1) re-examine the rigidification hypothesis with OPC and TIP4P-Ew water, (2) anchor with smFRET at 85 °C, (3) scale to continuous-flow biocatalysis. 47 papers from the team library are cited across the blocks. The brain flags one open contradiction: Aim 3 (flexible dynamics matter for biocatalysis) conflicts with the Aim 1 framing — Marcus raised this in a comment yesterday. Worth resolving before submission.",
     followups: ["Open the R01 notebook", "Resolve the Aim 1 / Aim 3 contradiction", "Draft a reviewer-rebuttal for TIP3P"],
   },
   {

@@ -1,7 +1,7 @@
 "use client";
 import * as React from "react";
 import Link from "next/link";
-import { AlertTriangle, ArrowRight, Brain, ChevronRight, Flame, GitBranch, Sparkles, TrendingUp, Users, Zap, FileText, CheckCircle2, BookOpenCheck, Database, Quote, DollarSign, Beaker } from "lucide-react";
+import { AlertTriangle, ArrowRight, Brain, ChevronRight, Flame, GitBranch, Sparkles, TrendingUp, Users, Zap, FileText, CheckCircle2, BookOpenCheck, Database, Quote, DollarSign, Beaker, Lightbulb } from "lucide-react";
 import { useStore } from "@/lib/store";
 import { papers } from "@/lib/mock-data/papers";
 import { alerts } from "@/lib/mock-data/alerts";
@@ -25,7 +25,7 @@ export default function DashboardPage() {
     setMessagesForSurface("dashboard");
   }, [setSurface, setMessagesForSurface]);
 
-  const [tab, setTab] = React.useState("personal");
+  const [tab, setTab] = React.useState("team");
   const highAlerts = alerts.filter((a) => a.priority === "high");
   const medAlerts = alerts.filter((a) => a.priority === "med");
   const lowAlerts = alerts.filter((a) => a.priority === "low");
@@ -60,8 +60,8 @@ export default function DashboardPage() {
 
       <Tabs value={tab} onValueChange={setTab}>
         <TabsList>
-          <TabsTrigger value="personal">Personal view</TabsTrigger>
           <TabsTrigger value="team">Team view</TabsTrigger>
+          <TabsTrigger value="personal">Personal view</TabsTrigger>
           <TabsTrigger value="trending">Trending concepts</TabsTrigger>
         </TabsList>
 
@@ -170,6 +170,7 @@ function AlertCard({ alert }: { alert: typeof alerts[number] }) {
     grant: { icon: DollarSign, color: "bg-amber-50 text-amber-700 border-amber-200", label: "Grant" },
     method: { icon: Beaker, color: "bg-indigo-50 text-indigo-700 border-indigo-200", label: "Method" },
     "cross-pollination": { icon: GitBranch, color: "bg-fuchsia-50 text-fuchsia-700 border-fuchsia-200", label: "Cross-pollination" },
+    hypothesis: { icon: Lightbulb, color: "bg-orange-50 text-orange-700 border-orange-200", label: "New hypothesis" },
   }[alert.type];
   const Icon = config.icon;
   return (

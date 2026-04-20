@@ -39,7 +39,7 @@ export function ChatDrawer() {
       dashboard: "Dashboard",
       synthesis: "Synthesis",
       ideation: "Ideation",
-      writing: "Writing",
+      writing: "Notebook",
       graph: "Graph",
       reader: "Reading",
       onboarding: "Onboarding",

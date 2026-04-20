@@ -117,7 +117,8 @@ export type AlertType =
   | "citing"
   | "grant"
   | "method"
-  | "cross-pollination";
+  | "cross-pollination"
+  | "hypothesis";
 
 export interface Alert {
   id: string;

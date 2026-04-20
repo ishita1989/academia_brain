@@ -29,7 +29,7 @@ export default function NotebookHomePage() {
     <div className="px-8 py-6 max-w-[1200px] mx-auto">
       <div className="flex items-center justify-between mb-6">
         <div>
-          <h1 className="text-2xl font-bold tracking-tight">Writing Studio</h1>
+          <h1 className="text-2xl font-bold tracking-tight">Notebook</h1>
           <p className="text-sm text-zinc-600 mt-1">Collaborative research notebooks. Block-based. Attributable. AI as a first-class contributor.</p>
         </div>
         <button onClick={() => setCreating(true)} className="inline-flex items-center gap-2 px-3.5 py-2 rounded-md bg-brand-600 hover:bg-brand-700 text-white text-sm font-medium shadow-sm">

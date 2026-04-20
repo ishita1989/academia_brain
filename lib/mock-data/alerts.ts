@@ -14,9 +14,21 @@ export const alerts: Alert[] = [
     actionHref: "/reader/p-chen-2026",
   },
   {
+    id: "al-new-hypothesis",
+    type: "hypothesis",
+    priority: "med",
+    title: "A new hypothesis your lab could test this quarter",
+    detail:
+      "Drawing on Chen 2026's OPC findings and your lab's 12-enzyme archaeal MD panel, the brain proposes: re-simulating the panel under OPC water at 363 K will overturn the rigidification conclusion in ≥3 systems. 3 supporting papers, 1 contradicting (Kawamura 2024). Ready to promote to an ideation session.",
+    actorIds: ["m-marcus", "m-priya"],
+    createdAt: "2026-04-18T06:15:00Z",
+    actionLabel: "Open in Ideation Lab",
+    actionHref: "/ideation/ses-enzymes-95c",
+  },
+  {
     id: "al-cross-pollination",
     type: "cross-pollination",
-    priority: "med",
+    priority: "low",
     title: "Marcus just annotated 2 papers relevant to your R01 Section 3",
     detail:
       "Marcus highlighted key passages in Lindorff-Larsen 2022 (force-field comparison) and Imoto 2023 (explicit solvent effects). Both directly support the methodology choices you're drafting.",
@@ -69,7 +81,7 @@ export const alerts: Alert[] = [
     detail:
       "NSF MCB-2026-Q3 call explicitly mentions computational-experimental integration for extremophile enzyme engineering. Your active R01 notebook already covers 4 of the 6 priority topics.",
     createdAt: "2026-04-10T09:05:00Z",
-    actionLabel: "Draft in Writing Studio",
+    actionLabel: "Draft in Notebook",
     actionHref: "/writing",
   },
   {

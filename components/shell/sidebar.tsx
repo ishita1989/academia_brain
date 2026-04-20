@@ -2,14 +2,15 @@
 import * as React from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Brain, Compass, FlaskConical, LayoutDashboard, NotebookPen, Share2, Sparkles, LibraryBig } from "lucide-react";
+import { Brain, Compass, Database, FlaskConical, LayoutDashboard, NotebookPen, Share2, Sparkles, LibraryBig } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 const nav = [
   { href: "/dashboard", label: "Dashboard", icon: LayoutDashboard, badge: "3" },
   { href: "/synthesis", label: "Synthesis", icon: Sparkles, badge: "2" },
   { href: "/ideation", label: "Ideation", icon: FlaskConical },
-  { href: "/writing", label: "Writing", icon: NotebookPen, badge: "3" },
+  { href: "/writing", label: "Notebook", icon: NotebookPen, badge: "3" },
+  { href: "/data", label: "Data", icon: Database, badge: "3" },
   { href: "/graph", label: "Graph", icon: Share2 },
   { href: "/library", label: "Library", icon: LibraryBig },
 ];
